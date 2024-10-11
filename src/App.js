@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Functions from './Functions';
 
 function App() {
   return (
@@ -18,8 +19,10 @@ function App() {
           Learn React
         </a>
       </header>
+      <Functions />
     </div>
   );
 }
 
 export default App;
+
