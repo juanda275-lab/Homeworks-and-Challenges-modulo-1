@@ -1,5 +1,7 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import FirstApp from './FirstApp';
+import logo from './logo.svg';
 
 function App() {
   return (
@@ -18,8 +20,10 @@ function App() {
           Learn React
         </a>
       </header>
+      <FirstApp />
     </div>
   );
 }
 
 export default App;
+
