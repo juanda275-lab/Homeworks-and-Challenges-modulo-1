@@ -1,0 +1,55 @@
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+  }
+  
+  .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .navbar a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+  }
+  
+  .navbar a.active {
+    background-color: #4CAF50; /* Color para el enlace activo */
+    color: white;
+    border-radius: 4px;
+  }
+  
+  .container {
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px; /* Añadir bordes redondeados */
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: darkred; /* Efecto hover */
+  }
+  

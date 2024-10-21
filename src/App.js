@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import Home from './pages/Home';
+import Profile from './pages/Profile';
+import Dashboard from './pages/Dashboard';
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const fakeLogin = () => {
+    setIsLoggedIn(true);
+  };
+
+  const fakeLogout = () => {
+    setIsLoggedIn(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/profile"
+            element={isLoggedIn ? <Profile /> : <Navigate to="/" />}
+          />
+          <Route
+            path="/dashboard"
+            element={isLoggedIn ? <Dashboard /> : <Navigate to="/" />}
+          />
+        </Routes>
+        {!isLoggedIn ? (
+          <button onClick={fakeLogin} style={{ backgroundColor: 'red', color: 'white' }}>
+            Login
+          </button>
+        ) : (
+          <button onClick={fakeLogout} style={{ backgroundColor: 'red', color: 'white' }}>
+            Logout
+          </button>
+        )}
+      </div>
+    </Router>
   );
 }
 
 export default App;
+
