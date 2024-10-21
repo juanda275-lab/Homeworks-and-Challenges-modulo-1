@@ -1,12 +1,20 @@
 {
+<<<<<<< HEAD
   "name": "once-arboles-grafos",
+=======
+  "name": "nueve-pilas-colas-listas",
+>>>>>>> 0d8e6c64bd4d90b5a3879d28323c70077225b58a
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+<<<<<<< HEAD
     "once-arboles-grafos": "file:",
+=======
+    "nueve-pilas-colas-listas": "file:",
+>>>>>>> 0d8e6c64bd4d90b5a3879d28323c70077225b58a
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
